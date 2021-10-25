@@ -9,6 +9,8 @@ import org.springframework.context.annotation.Configuration
 @ConfigurationProperties(prefix = "config")
 class NodeProperties(
     var serverUrl: String = "",
+    var serverUsername: String = "",
+    var serverPassword: String = "",
     var device: Device? = null,
     val sensors: List<Sensor> = mutableListOf()
 ) {

@@ -16,10 +16,12 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter")
+    implementation("org.springframework.boot:spring-boot-starter:2.5.5")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2-native-mt")
+    implementation("org.springframework.boot:spring-boot-starter-web:2.5.5")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.springframework.boot:spring-boot-starter-test:2.5.5")
 }
 
 tasks.withType<KotlinCompile> {
