@@ -1,5 +1,5 @@
 config:
-  serverUrl: localhost:8080
+  serverUrl: host.docker.internal:8080
   serverUsername: node
   serverPassword: node
   device:

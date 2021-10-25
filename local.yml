@@ -1,0 +1,17 @@
+config:
+  serverUrl: host.docker.internal:8080
+  serverUsername: node
+  serverPassword: node
+  device:
+    id: 2
+    name: Device 2
+  sensors:
+    - id: 4
+      name: Sensor 2_1
+      dataType: TEPLOTA
+    - id: 5
+      name: Sensor 2_2
+      dataType: VLHKOST
+
+server:
+  port: 8080
