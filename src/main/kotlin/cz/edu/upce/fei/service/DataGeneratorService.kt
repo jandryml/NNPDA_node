@@ -18,11 +18,11 @@ class DataGeneratorService(
     fun sendData() {
         nodeProperties.sensors.forEach {
             val data = SensorData(it.dataType, generateRandomValue().toString(), it.id, dateFormat.format(Date()))
+            println("Sending data for : ${it.id} - ${it.name} : $data")
             dataSendingService.postData(
                 data,
                 "/api/sensor-data"
             )
-            println("Sending data for : ${it.id} - ${it.name} : $data")
         }
     }
 
