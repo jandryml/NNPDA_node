@@ -1,20 +1,12 @@
 config:
-  serverUrl: host.docker.internal:8080
+  cron: 0 * * * * *
+  serverUrl: localhost:8080
   serverUsername: node
   serverPassword: node
   device:
-    id: 1
-    name: Device 1
+    id: -1
+    name: Change-me
   sensors:
-    - id: 1
-      name: Sensor 1_1
-      dataType: TEPLOTA
-    - id: 2
-      name: Sensor 1_2
-      dataType: VLHKOST
-    - id: 3
-      name: Sensor 1_3
-      dataType: SPOTREBA_VODY
 
 server:
   port: 8081

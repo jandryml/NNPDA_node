@@ -1,8 +1,12 @@
 config:
+  cron: 0 * * * * *
   serverUrl: host.docker.internal:8080
   serverUsername: node
   serverPassword: node
-    <Add-config>
+  device:
+    id: -1
+    name: Change-me
+  sensors:
 
 server:
   port: 8081

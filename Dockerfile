@@ -9,4 +9,4 @@ COPY ${CONF_FILE} local.yml
 
 
 # java -jar /opt/app/app.jar --spring.config.location=file:local.yml
-#ENTRYPOINT ["java","-jar","app.jar", "--spring.config.location=file:local.yml"]
+ENTRYPOINT ["java","-jar","app.jar", "--spring.config.location=file:local.yml", "> logs.txt"]
